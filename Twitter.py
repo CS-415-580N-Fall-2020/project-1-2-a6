@@ -28,7 +28,7 @@ def connection_to_twitt(url, headers):
                 dic['public_metrics'] = response_loaded['data']['public_metrics']
                 # dic['referenced_tweets'] = response_loaded['data']['referenced_tweets']
 
-                # calling into mongodb
+                #calling into mongodb
                 db.twitts.insert_one(dic)
                 # print(json.dumps(response_loaded, indent = 4, sort_keys = True))
                 print('loading into databases')
