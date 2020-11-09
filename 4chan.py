@@ -1,4 +1,3 @@
-# importing packages
 import re
 from bs4 import BeautifulSoup
 from datetime import datetime as dt
